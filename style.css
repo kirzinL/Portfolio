@@ -354,7 +354,7 @@ border-radius:100%;
 .project-card{
     position: relative;
     cursor: pointer;
-    display: block;
+  
   
 }
 
@@ -377,6 +377,7 @@ border-radius:100%;
     justify-content: center;
     align-items: center;
     transition: .5s;
+    flex-direction: column;
     text-transform: capitalize;
     
     opacity: 0;
@@ -515,10 +516,19 @@ border-radius:100%;
 }
 
 
-
+.card-contents{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
 
 /* contact form */
 .contact{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
 }
 

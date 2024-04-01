@@ -20,11 +20,14 @@ projects.forEach(project => {
         <div class="content">
             <h1 class="project-name">${project.name}</h1>
             <span class="tags">${project.tags}</span>
+            <br>
+            <a href="${project.link}"><span class="link">${project.link}</span></a> 
+             
         </div>
     </div>
     `;
 })
-
+ 
 // filters
 
 const filters = document.querySelectorAll('.filter-btn');
